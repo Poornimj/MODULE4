@@ -1,21 +1,23 @@
 numbers = []
 
 while True:
-    user_input = input("Enter a number (or press Enter to quit): ")
+    userInput = input("Enter a number (or press Enter to quit):")
 
-    if user_input == "":
+    if userInput =="":
         break
 
     try:
-        number = float(user_input)
+        number = float(userInput)
         numbers.append(number)
     except ValueError:
         print("Please enter a valid number.")
 
 if numbers:
-    smallest = min(numbers)
-    largest = max(numbers)
-    print(f"The smallest number entered is: {smallest}")
-    print(f"The largest number entered is: {largest}")
+        smallest = min(numbers)
+        largest = max(numbers)
+        print(f"The smallest number entered is: {smallest}")
+        print(f"The largest number entered is: {largest}")
 else:
     print("No numbers were entered.")
+
+
